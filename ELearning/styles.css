@@ -1,0 +1,128 @@
+@font-face { font-family: Bearer ; src: url('RINGM.ttf'); }
+
+html,body{
+    margin:0;
+    min-height: 100%;
+}
+body {
+  
+  padding: 0;
+  background-color: black ;
+  position:relative;
+  
+}
+ 
+
+.nav ul {
+    
+  list-style: none;
+  background-color: #444;
+  padding-right: 25px;
+  margin: 0;
+  text-align: right;
+  
+}
+.nav li {
+  
+  display: inline-block;
+//  font-size: 1.2em;
+//  line-height: 40px;
+// height: 40px;
+//  border-bottom: 1px solid #888;
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+}
+ .nav .leftAlign{
+    float: left;
+    padding:0;
+    color:white;
+    margin:0;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  text-decoration: underline;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.image .textOverImage { 
+   position: absolute;
+   top: 15px; 
+   left: 500px; 
+   //width:50%; 
+   color:white;
+   font-size: 300%;
+   font-family: Bearer;
+}
+
+.image .textOverImage1 { 
+   position: absolute;
+   bottom: 100px; 
+   left: 485px; 
+   //width: 100%; 
+   color:white;
+   font-size: 300%;
+   font-family: Bearer;
+   
+}
+
+
+//------------------
+.overlay-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.75);
+}
+    .overlay-content {
+        display: none;
+        background: #fff;
+        padding: 1%;
+        width: 40%;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+        cursor: default;
+        z-index: 10001;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.9);
+    }
+ 
+    .close-btn, .btn{
+        cursor: pointer;
+        border: 1px solid #333;
+        padding: 2% 5%;
+        background: #a9e7f9; /* fallback */
+        border-radius: 4px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    
+    .close-btn:hover,.btn:hover {
+        background: #05abe0;
+    }
+ 
